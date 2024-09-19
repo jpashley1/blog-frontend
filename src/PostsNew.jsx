@@ -15,7 +15,7 @@ export function PostsNew() {
         <div>
           Image URL: <input type="text" />
         </div>
-        <button type="submit">Post recipe</button>
+        <button type="submit">Post post</button>
       </form>
     </div>
   );

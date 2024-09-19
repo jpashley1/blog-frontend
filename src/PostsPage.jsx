@@ -2,6 +2,9 @@ import { PostsIndex } from "./PostsIndex";
 import { PostsNew } from "./PostsNew";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Modal } from "./Modal";
+
+
 
 export function PostsPage() {
   let name = "Test";
@@ -19,6 +22,9 @@ useEffect(getPostData, []);
     <main>
       <PostsNew />
       <PostsIndex name={name} posts={posts} />
+      <Modal show={true}>
+        <p>Here is my mowdullll</p>
+        </Modal>
       {/* <button onClick={getPostData}>get the data</button> */}
     </main>
   );
